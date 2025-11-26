@@ -6,10 +6,10 @@
 #define LOADCELL_SCK_PIN 22   // D22 pin on board
 
 // 2. Adjustment settings
-// Coke: 360g grams
+// Coke: 380g grams
 // Reading: ~152950
-// 152950 / 360 = 424.86111111111111111111111111111
-const float LOADCELL_DIVIDER = static_cast<float>(152950) / 360;
+// 152950 / 380 = 424.86111111111111111111111111111
+const float LOADCELL_DIVIDER = static_cast<float>(152950) / 380;
 
 HX711 loadcell;
  
