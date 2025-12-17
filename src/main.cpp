@@ -28,6 +28,7 @@ void setup() {
   // Display testing
   lcd.begin();
   lcd.backlight();
+  lcd.clear();
   lcd.print("Coffee Scale");
 }
  
@@ -35,6 +36,8 @@ void loop() {
   int reading = loadcell.get_units(10);
   Serial.print("Reading: ");
   Serial.println(reading, 0);
+  // LCD Display
+  lcd.clear();
   lcd.setCursor(0, 1);
   lcd.print("Weight: ");
   lcd.print(reading, 0);
